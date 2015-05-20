@@ -1,0 +1,281 @@
+/*! styles.css */
+/** { border: 1px solid red;}*/
+* {
+    box-sizing:border-box
+}
+
+#accordion {
+    margin-left:8%;
+    text-align:left;
+    margin-right:10%
+}
+li.active {
+	background-color: lightgray;
+}
+.anchor {
+    padding-top:120px;
+    margin-top:-110px
+}
+
+.back {
+    margin-left:15%
+}
+
+body {
+    background-image:url(../img/wpid.jpg);
+    color:#34495e;
+    position:relative
+}
+
+.btn btn-info {
+    background-color:#00008b
+}
+.carousel {
+	position: relative;
+}
+.carousel-caption: {
+    font-size:1.7em
+}
+
+.col-lg4 col-md-4 {
+    padding:0 0 1% 2%;
+}
+.row {
+	padding-left: 3%;
+}
+#comment {
+    padding-left:12px
+}
+
+.comment-box {
+    cols:60 rows=5
+}
+
+#contact {
+    background-image:url(../img/desktop.jpg)
+}
+
+.container anchor {
+    text-align:center;
+    font-size:1.2em
+}
+
+.container-fluid: {
+    padding-left:0;
+    padding-right:0;
+    height: 100%;
+    width: 100%;
+}
+.container-video {
+	text-align: center;
+	height: 100%;
+	margin-bottom: 3em;
+	padding-bottom: 6em;
+	width: 80%;
+	margin-left: 8%;
+}
+.copyrightInfo {
+    float:right;
+    list-style-type:none
+}
+
+.copyrightInfo li p {
+    font-size:1.2em
+}
+
+#email {
+    background-color:#ff0;
+    max-width:30%
+}
+
+.footer {
+    clear:both;
+    background-color:lightgray;
+    padding:2em
+}
+
+#form {
+    clear:both
+}
+.form-control {
+	width: 80%;
+}
+
+.form-group {
+    display:inline-block
+}
+
+#form {
+    width:80%
+}
+.header {
+	padding: 5em 0 0 4em;
+}
+/*#home {
+	color: white !important;
+	padding-right: 0;
+	text-transform: uppercase;
+	padding-top: 1.1em;
+}*/
+
+html {
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover
+}
+
+.jumbotron {
+    background-size:cover
+}
+
+.main_text {
+    clear:both
+}
+/* large desktop */
+ @media (min-width: 1200px) {
+    .carousel-caption p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) .carousel-caption p {
+        font-size: 1em;
+        line-height: 1.4;
+        bottom: 10%;
+    }
+}
+/* landscape phone to portrait tablet */
+ @media (max-width: 767px) {
+    .carousel-caption p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    /* landscape phones and down */
+    @media (max-width: 480px) {
+        .carousel-caption p {
+            font-size: 1em;
+            line-height: 1.4;
+        }
+    }
+    @media (max-width:48.000em) {
+        .example-header .container {
+            width: 100%;
+        }
+        .nav ul {
+            width: 100%;
+            font-weight: normal;
+        }
+        .nav ul li {
+            width: 100%;
+            float: left;
+            font-size: .75em;
+        }
+        .nav ul li:nth-of-type(odd) a {
+        }
+        .nav ul li a {
+            padding: 8px 0px;
+            border-bottom: 1px solid #ccc;
+            display: block;
+        }
+    }
+.modal-button {
+    float:right;
+    padding:15px;
+    margin-right:17px;
+    margin-top:6px
+}
+
+.modal-body {
+    height:500px
+}
+
+#modalframe {
+    padding:10px;
+    width:100%;
+    height:100%;
+    .navbackground-color:lightgray;
+    float:right!important
+}
+.nav {
+	background-color: black !important;
+	color: white !important;
+}
+.nav a {
+    transition:color 600ms;
+    -webkit-transition:color 600ms
+	color: white !important;
+}
+
+.nav navbar-nav {
+    float:right!important;
+}
+
+.nav ul li {
+    display:inline-block;
+    padding-bottom:.5em
+}
+
+.nav ul li a {
+    color:#000;
+    text-transform:uppercase;
+    padding-right:.1em;
+    background-color: black;
+	color: white !important;
+}
+
+.navbar {
+    height:30px;
+    border:0
+}
+
+.navbar a {
+	padding-right: 0;
+	text-transform: uppercase;
+}
+
+.navbar-fixed-top {
+	top: 0;
+}
+.navbar-inverse {
+    height:30px;
+    border:0;
+    background-color: black !important;
+}
+
+.navbar-nav {
+    float:right !important;
+    margin-right: 4em;
+    background-color: black !important;
+}
+
+.panel-group {
+    margin:5%
+}
+
+#share-buttons {
+    float:right
+}
+
+
+#twitter {
+    padding-bottom:3px
+}
+
+.twitter-share-button {
+    padding-left:1em
+}
+ul.nav navbar-nav {
+	background-color: black !important;
+}
+.videoWrapper {
+    clear:both;
+    text-align:center;
+    padding-top:10%;
+    margin-bottom:35%
+}
+
+/*Typography*/
+h1,h2,h3 {
+    font-family:Futura,Helvetica,Arial,sans-serof
+}
