@@ -27,7 +27,7 @@ body {
     position:relative
 }
 
-.btn btn-info {
+#btn-info {
     background-color:#00008b
 }
 .carousel {
