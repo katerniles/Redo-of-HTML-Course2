@@ -27,9 +27,9 @@ body {
     position:relative
 }
 
-#btn-info {
-    background-color:#00008b
-}
+/*#btn-info {
+    background-color: orange;
+}*/
 .carousel {
 	position: relative;
 }
@@ -43,7 +43,7 @@ body {
 .row {
 	padding-left: 3%;
 }
-#comment {
+.comment {
     padding-left:12px
 }
 
