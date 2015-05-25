@@ -36,6 +36,9 @@ body {
 .carousel-caption: {
     font-size:1.7em
 }
+#char-count {
+
+}
 
 .col-lg4 col-md-4 {
     padding:0 0 1% 2%;
@@ -75,12 +78,13 @@ body {
 	margin-left: 8%;
 }
 .copyrightInfo {
-    float:right;
+    float:left;
     list-style-type:none
 }
 
 .copyrightInfo li p {
     font-size:1.2em
+    float: right;
 }
 
 #email {
@@ -262,8 +266,8 @@ html {
     padding-bottom:3px
 }
 
-.twitter-share-button {
-    padding-left:1em
+.twitter-follow-button {
+    padding-left:5em;
 }
 ul.nav navbar-nav {
 	background-color: black !important;
