@@ -69,6 +69,12 @@ body {
     height: 100%;
     width: 100%;
 }
+.container-table {
+    width: 80%;
+    margin: 1em 10% 2em 10%;
+    font-size: 1.2em;
+    background-color: white;
+}
 .container-video {
 	text-align: center;
 	height: 100%;
@@ -201,6 +207,7 @@ html {
     .navbackground-color:lightgray;
     float:right!important
 }
+
 .nav {
 	background-color: black !important;
 	color: white !important;
@@ -261,7 +268,6 @@ html {
     float:right
 }
 
-
 #twitter {
     padding-bottom:3px
 }
@@ -269,6 +275,7 @@ html {
 .twitter-follow-button {
     padding-left:5em;
 }
+
 ul.nav navbar-nav {
 	background-color: black !important;
 }
