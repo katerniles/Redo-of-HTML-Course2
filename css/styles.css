@@ -134,7 +134,27 @@ html {
     -o-background-size:cover;
     background-size:cover
 }
-
+.image {
+    box-sizing: border-box;
+    border: 2px solid pink;
+    width: 200px;
+    height: 102px;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+.info {
+    display: inline-block;
+    color: #fff;
+    font-family: Futura;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    line-height: 1.6;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
 .jumbotron {
     background-size:cover
 }
@@ -262,6 +282,9 @@ html {
 
 .panel-group {
     margin:5%
+}
+.proj-title {
+    font-weight: 100;
 }
 
 #share-buttons {
