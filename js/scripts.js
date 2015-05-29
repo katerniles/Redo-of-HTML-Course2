@@ -53,5 +53,22 @@ $(".comment").on("keyup", function() {
 	};
 	//here is where rest of code goes
 });
+    function initialize() {
+    var mapOptions = {
+      center: new google.maps.LatLng(41.826532, -86.206179),
+      zoom: 15
+    };
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    var marker = new google.maps.Marker({
+      position: map.getCenter(),
+      map: map,
+      title: 'Click to zoom'
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      map.setZoom(15);
+      map.setCenter(marker.getPosition());
+    });
+  };
+  google.maps.event.addDomListener(window, 'load', initialize);
 
 
