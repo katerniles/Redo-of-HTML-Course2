@@ -47,15 +47,19 @@ body {
 	padding-left: 3%;
 }
 .comment {
-    padding-left:12px
+    padding-left:12px;
+    width: 100%;
 }
 
 .comment-box {
-    cols:60 rows=5
+    cols:60 rows=5;
+    width: 80%;
 }
 
 #contact {
-    background-image:url(../img/desktop.jpg)
+    background-image:url(../img/desktop.jpg);
+    width: 78%;
+    margin-left: 9%;
 }
 
 .container anchor {
@@ -139,7 +143,7 @@ html {
     border: 2px solid pink;
     width: 200px;
     height: 102px;
-    margin: 5px;
+    margin: 5px 0 5px 6%;
     display: inline-block;
     position: relative;
 }
@@ -162,6 +166,13 @@ html {
 .main_text {
     clear:both
 }
+#map-canvas { 
+    height: 50%; width: 80%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;  
+}
+
 /* large desktop */
  @media (min-width: 1200px) {
     .carousel-caption p {

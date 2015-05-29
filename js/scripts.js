@@ -7,20 +7,17 @@ $(document).ready(function() {
 	alert("Document is ready!");
 	/*create zebra-striped table */
 	var rows = $(".my-row");
-	for(var i=0; i<rows.length; ++i) {
-		if (i%2===0) {
-			$(rows[i]).css("background-color", "yellow");
+	console.log(rows);
+      for(var i=0; i < rows.length; i++) {
+        if (i % 2 === 1) {
+          $(rows[i]).css("background-color", "yellow");
+          };
+      };
 	for(var i=0; i<myKitties.length; ++i) {
 		$("#" + i).css("background-image", "url(" + myKitties[i].pic + ")");
-		$(".image").mouseenter( function() {
-			console.log(this);
-			$(this).html("<p class='info'><span class='proj-title'>Title:</span> " + myKitties[this.id].title + "</p>");
-		}).mouseleave( function() {
-			$("p.info").html("");
-		});
 };
-};
-}; 
+}); 
+
 $(".comment").css("background-color", "white"); 
 
 	//when submit button is clicked, 
@@ -55,5 +52,6 @@ $(".comment").on("keyup", function() {
 		$("#char-count").css("color", "black");
 	};
 	//here is where rest of code goes
-})});
+});
+
 
