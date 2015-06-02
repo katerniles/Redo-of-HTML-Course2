@@ -3,7 +3,7 @@ var myKitties = [ { title: "First Project", pic: "img/index1.jpg" }, { title: "S
 ];
 
 /*testing to make sure connected correctly. It is*/
-$(document).ready(function() {
+/*$(document).ready(function() {
 	alert("Document is ready!");
 	/*create zebra-striped table */
 	var rows = $(".my-row");
@@ -15,8 +15,25 @@ $(document).ready(function() {
       };
 	for(var i=0; i<myKitties.length; ++i) {
 		$("#" + i).css("background-image", "url(" + myKitties[i].pic + ")");
+		//*google map initialize function
+		    function initialize() {
+    var mapOptions = {
+      center: new google.maps.LatLng(41.826532, -86.206179),
+      zoom: 15
+    };
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	google.maps.event.addDomListener(window, 'load', initialize);
+	var marker = new google.maps.Marker({
+      position: map.getCenter(),
+      map: map,
+      title: 'Click to zoom'
+    });
+    google.maps.event.addListener(marker, 'click', function(){
+    	map.setZoom(8);
+    	map.setCenter(marker.getPosition());
+    })
 };
-}); 
+ 
 
 $(".comment").css("background-color", "white"); 
 
@@ -53,22 +70,7 @@ $(".comment").on("keyup", function() {
 	};
 	//here is where rest of code goes
 });
-    function initialize() {
-    var mapOptions = {
-      center: new google.maps.LatLng(41.826532, -86.206179),
-      zoom: 15
-    };
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-    var marker = new google.maps.Marker({
-      position: map.getCenter(),
-      map: map,
-      title: 'Click to zoom'
-    });
-    google.maps.event.addListener(marker, 'click', function() {
-      map.setZoom(15);
-      map.setCenter(marker.getPosition());
-    });
+
+
   };
   google.maps.event.addDomListener(window, 'load', initialize);
-
-
